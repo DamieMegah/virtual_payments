@@ -1,0 +1,255 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M-virtuals</title>
+    <link href="https://fonts.cdnfonts.com/css/paint-brush-script" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper-bundle.min.css"/>
+     <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="logo.jpg" type="image/jpg">
+    <link rel="stylesheet" id="stylesheet" href="index.css">
+</head>
+<body>
+    
+    <!-- Header -->
+    <header>
+        <div class="header reveal">
+         <div class="name">
+            <h1><span>M</span>-Virtual Payments</h1>
+            <h5 class="user" id="user"><i class="fas fa-sign-in-alt"> </i> &nbsp;Login</h5>
+        </div>
+
+         <nav class="nav">
+            
+                <a href="#">Home</a>
+                <a href="#About">About Us</a>
+                <a href="#contact">Contact</a>
+                <a href="#login" onclick="toggleLogin()">Account</a>
+                <a href="#sign-up">Sign Up</a>
+              
+                
+            
+         </nav>
+
+            
+            <div id="menu">
+                <i class="fas fa-bars" id="menu-btn"></i>
+                <i class="fas fa-message"></i>
+                <i class="fas fa-bell "></i>
+            </div>
+
+        </div>
+    </header>
+
+
+    
+    <!-- Sidebar Navigation -->
+    <nav id="sidebar" class="sidebar">
+        <div id="close-menu"><i class="fas fa-times"></i></div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#accout">Account</a></li>
+            <li><a href="#sign-up">Sign Up</a></li>
+            <li><a href="#faq">FAQ</a></li>
+        </ul>
+    </nav>
+
+     <!-- Login Section -->
+     <div class="login-container" id="login-container">
+        <div id="close-menu2"><i class="fas fa-times"></i></div>
+        <div class="login-box">
+            <h2>Login</h2>
+            <form action="javascript:void(0);" >
+              <input type="text" id="username" placeholder="Email Or Username">
+              <input type="password" placeholder="Password" required >
+              <button onclick="login()" id="submit">Login</button>
+
+              <div><a href="">Forget Password</a> <a href="#">Sign Up</a></div>
+            </form>
+        </div>
+    </div>
+
+    <section class="hero reveal" id="hero">
+        <div class="hero-bg active" id="bg1"><img src="secure1.avif" alt="Background 1"></div>
+        <div class="hero-bg" id="bg2"><img src="transaction.avif" alt="Background 2"></div>
+        <div class="hero-bg" id="bg3"><img src="pay2.avif" alt="Background 3"></div>
+    
+        <h2 id="hero-heading">Fast & Secure Online Payments</h2>
+        <p id="hero-text">Pay for airtime, school fees, and other bills instantly.</p>
+        <button class="cta-btn" id="cta-btn">Get Started</button>
+    </section>
+
+
+   <section id="pay" class="reveal">
+                
+             <div id="airtime" class="payment-section">
+
+        <img src="data.jpg" alt="airtime">
+
+           <button class="toggle-form" id="btn1" >Buy Airtime <i class="fas fa-phone"></i></button>
+             <form id="air">
+                 <label for="network1">Select Network:</label>
+                 
+                  <select id="network1">
+                     <option value="mtn">MTN</option>
+                     <option value="airtel">Airtel</option>
+                     <option value="glo">Glo</option>
+                     <option value="etisalat">Etisalat</option>
+                  </select>
+                   <label for="amount1">Amount:</label>
+                   <select id="amount1" required>
+                    <option value="100">100</option>
+                    <option value="200">200</option>
+                    <option value="500">500</option>
+                    <option value="1000">1000</option>
+                  </select>
+                   <button type="submit">Buy Now</button>
+            </form>
+             </div>
+
+        <div id="airtime2" class="payment-section">
+        <img src="image3.jpg" alt="data">
+        <button class="toggle-form" id="btn2" >Internet <i class="fas fa-wifi"></i></button>
+        <form id="air2">
+            <label for="network2">Select Network:</label>
+            <select id="network2">
+                <option value="mtn">MTN</option>
+                <option value="airtel">Airtel</option>
+                <option value="glo">Glo</option>
+                <option value="etisalat">Etisalat</option>
+            </select>
+            <label for="amount2">Amount:</label>
+            <select id="amount2" required>
+                <option value="100">100MB @ &#x20A6;100 </option>
+                <option value="200">1GB  @ &#x20A6;800</option>
+                <option value="500">1.500  @ &#x20A6;1,200</option>
+                <option value="1000">2GB  @ &#x20A6;1,600</option>
+                <option value="500">5GB  @ &#x20A6;2,400</option>
+                <option value="1000">7.5GB  @ &#x20A6;3,200</option>
+                <option value="500">10GB  @ &#x20A6;4,100</option>
+                <option value="1000">12GB  @ &#x20A6;4,700</option>
+            </select>
+            <button type="submit">Pay Now</button>
+        </form>
+            </div>
+
+    
+            <div id="sch" class="payment-section">
+        <img src="grad.jpg" alt="graduate">
+        <button class="toggle-form" id="btn3">School Fees <i class="fas fa-graduation-cap"></i></button>
+        <form id="air3">
+           
+            <label for="amount2">Select Institution</label>
+            <select id="amount2" required>
+                <option value="100">University Of Lagos (UNILAG)</option>
+                <option value="200">YABA College Of Technology(YABATECH)</option>
+                <option value="500">Lagos state university (LASU)</option>
+                <option value="1000">University Of Ilorin (UNIILORIN)</option>
+
+            </select>
+            <button type="submit">Continue</button>
+        </form>
+            </div>
+
+    
+            <div id="bill" class="payment-section">
+        <img src="image2.jpg" alt="power">
+        <button class="toggle-form" id="btn4">Utility Bills <i class="fas fa-lightbulb"></i></button>
+        <form id="air4">
+           
+            <label for="amount2">Select Bill</label>
+            <select id="amount2" required>
+                <option value="100">Electricity(EKEDC)</option>
+                <option value="200">Water(NWC)</option>
+                <option value="500">Tax (NIRS)</option>
+                <option value="1000">Bet (sport Bet)</option>
+
+            </select>
+            <button type="submit">Continue</button>
+        </form>
+             </div>
+
+
+
+
+    </section>
+
+
+    <section class="about" id="about">
+        <div class="about-container">
+            <h2 class="reveal">About M-Virtual Payments</h2>
+            <p class="reveal">
+                M-Virtual Payments is your go-to platform for secure, fast, and convenient transactions. 
+                We offer seamless payment solutions for airtime, data, school fees, utility bills, and more.  
+                Our mission is to simplify digital transactions while ensuring security and efficiency.  
+            </p>
+            <div class="about-grid">
+                <div class="about-box reveal">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Secure Transactions</h3>
+                    <p>Your security is our priority. We use top-notch encryption to keep your details safe.</p>
+                </div>
+                <div class="about-box reveal">
+                    <i class="fas fa-clock"></i>
+                    <h3>Instant Payments</h3>
+                    <p>Say goodbye to delays—our platform ensures real-time payment processing.</p>
+                </div>
+                <div class="about-box reveal">
+                    <i class="fas fa-percent"></i>
+                    <h3>Best Rates</h3>
+                    <p>Enjoy competitive pricing and the best deals on airtime, data, and bill payments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+<section class="newsletter reveal">
+    <div class="newsletter-container">
+        <h2>Stay Updated!</h2>
+        <p>Subscribe to our newsletter to get the latest updates, offers, and exclusive deals.</p>
+        <form action="javascript:void(0);" class="newsletter-form">
+            <input type="email" id="newsletter-email" placeholder="Enter your email" required>
+            <button type="submit" class="subscribe-btn">Subscribe</button>
+        </form>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <h2><span>M</span>-Virtual Payments</h2>
+        </div>
+
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="#faq">FAQ</a>
+        </div>
+
+        <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+
+        <p class="footer-text">&copy; 2025 M-Virtual Payments. All Rights Reserved.</p>
+    </div>
+</footer>
+
+    
+<button id="install-btn" class="install-btn">Install App</button>
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
