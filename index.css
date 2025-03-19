@@ -268,10 +268,10 @@ width:50%;
     right:-40rem;
     max-width:40rem;
     padding: 0 1rem;
-    border:.1px solid var(--black);
+    border:.1px solid black;
     background:var(--white-color);
     color:var(--black);
-    box-shadow: var(--box-shadow);
+    box-shadow: 0.1px 2px 1px #140d0d;
     opacity:0.2;
     transition: 0.2s ease-in-out;
     display:none;
@@ -292,6 +292,9 @@ width:50%;
     flex-direction:column;
     width:20rem;
     gap:.5rem;
+    padding:1rem;
+    border:.1px solid #000;
+    border-radius:var(--border-radius);
 }
 
 
