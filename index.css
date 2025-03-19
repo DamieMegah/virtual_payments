@@ -287,6 +287,10 @@ width:50%;
 
 }
 
+.login-box h2{
+    color: var(--primary-color);
+}
+
 .login-box form{
     display:flex;
     flex-direction:column;
